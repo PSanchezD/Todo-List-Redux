@@ -17,7 +17,7 @@ export const TodoReducer = (state = todo_state, action) => {
     case actionTypes.REMOVE_POST:
       return {
         ...state,
-        list: state.list.filter(x => x !== action.payload),
+        list: state.list.filter(x => x.id !== action.payload),
       };
     default:
       return state;
