@@ -32,7 +32,7 @@ const Home = () => {
                 <ul>
                   <li>{x.text}</li>
                 </ul>
-                <button onClick={(id) => dispatch(REMOVEPOST(id))}>delete</button>
+                <button onClick={() => dispatch(REMOVEPOST(x.id))}>delete</button>
               </div>
             </>
           );
